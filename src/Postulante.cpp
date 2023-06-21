@@ -57,4 +57,31 @@ void Postulante::modificar_email(string email)
     this->email = email;
 }
 
+bool Postulante::operator<(const Postulante& p) const
+{
+    return (this->tecnologias.size() < p.obtener_cant_tecnologias());
+}
+
+bool Postulante::operator>(const Postulante& p) const
+{
+    return (this->tecnologias.size() > p.obtener_cant_tecnologias());
+}
+
+int Postulante::obtener_cant_tecnologias() const
+{
+    return this->tecnologias.size();
+}
+
+
+Postulante & Postulante::operator=(const Postulante& p)
+{
+    this->edad = p.obtener_edad();
+    this->email = p.obtener_email();
+    this->nombre = p.obtener_nombre();
+    p.obtener_tecnologias(this->tecnologias);
+
+    return *this;
+}
+
+
 

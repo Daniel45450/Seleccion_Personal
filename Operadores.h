@@ -6,6 +6,19 @@ ostream & operator << (ostream & salida, const set<string> & conjunto_s);
 ostream & operator << (ostream & salida, const Postulante & p);
 ostream & operator << (ostream & salida, const vector<string> & vector_s);
 ostream & operator << (ostream & salida, const vector<Postulante> & postulantes);
+ostream & operator << (ostream & salida, const list<string> & list_s);
+
+
+ostream & operator << (ostream & salida, const list<string> & list_s)
+{
+    typename list<string>::const_iterator it = list_s.begin();
+    while(it != list_s.end()) {
+        salida << *it << " ";
+        it++;
+    }
+    salida << "\n";
+    return salida;
+}
 
 ostream & operator << (ostream & salida, const set<string> & conjunto_s)
 {

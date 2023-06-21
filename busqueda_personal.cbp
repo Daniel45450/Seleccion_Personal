@@ -36,6 +36,7 @@
 		</Compiler>
 		<Unit filename="Funciones_archivo.h" />
 		<Unit filename="Operadores.h" />
+		<Unit filename="Seleccionador.h" />
 		<Unit filename="entrada.txt" />
 		<Unit filename="include/Postulante.h" />
 		<Unit filename="main.cpp" />
