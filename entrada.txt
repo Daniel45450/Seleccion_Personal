@@ -1,0 +1,10 @@
+12
+Java;C++;Pyhton;PHP;Prolog;Fortran;Perl;Typescript;Ruby;JavaScript;Smalltalk;Pascal;
+7
+Daniel;22;daniel@gmail.com;Java;C++;Prolog;Fortran;
+Damian;24;damian@gmail.com;Python;PHP;Perl;Typescript;Smalltalk;Pascal;
+Santiago;29;santiago@gmail.com;Ruby;JavaScript;Smalltalk;
+Camila;32;camila@gmail.com;PHP;Typescript;Pascal;
+Agustina;25;agustina@gmail.com;Prolog;Ruby;
+Javier;40;javier@gmail.com;Java;C++;
+Virginia;27;virginia@gmail.com;Pascal;C++;Java;

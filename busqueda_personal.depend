@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1687314919 source:e:\programas\busqueda_personal\main.cpp
+	<iostream>
+	"Funciones_archivo.h"
+	"Operadores.h"
+	"Postulante.h"
+
+1687314749 source:e:\programas\busqueda_personal\src\postulante.cpp
+	"Postulante.h"
+
+1687314726 e:\programas\busqueda_personal\include\postulante.h
+	<string>
+	<vector>
+
+1687315587 e:\programas\busqueda_personal\funciones_archivo.h
+	<fstream>
+	<string>
+	<set>
+	<Postulante.h>
+	<vector>
+
+1687315092 e:\programas\busqueda_personal\operadores.h
+
