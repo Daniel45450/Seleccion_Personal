@@ -17,6 +17,7 @@ class Postulante
         int obtener_edad() const;
         void obtener_tecnologias(vector<string> & tecnologias) const;
         int obtener_cant_tecnologias() const;
+        bool conoce_tecnologia(string lenguaje);
 
         void modificar_nombre(string nombre);
         void modificar_edad(int edad);

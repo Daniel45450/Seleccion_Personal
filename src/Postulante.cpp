@@ -83,5 +83,18 @@ Postulante & Postulante::operator=(const Postulante& p)
     return *this;
 }
 
+bool Postulante::conoce_tecnologia(string lenguaje)
+{
+    vector<string>::const_iterator it = this->tecnologias.begin();
+    while(it != tecnologias.end()) {
+        if(*it == lenguaje){
+            return true;
+        }
+        it++;
+    }
+    return false;
+}
+
+
 
 
