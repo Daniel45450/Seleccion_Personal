@@ -20,8 +20,9 @@ bool asignado(const vector<string> & postulantes, const string & buscar)
 void backtracking_busqueda(set<string> & tec_cubrir, vector<Postulante> & postulantes, set<string>::iterator & it_t, vector<string> & s_actual, vector<string> & mejor_s)
 {
     if(it_t == tec_cubrir.end()) {
+            cout << "asd";
         if(s_actual.size() < mejor_s.size()) {
-            mejor_s = s_actual;
+           copiar_lista(s_actual, mejor_s);
         }
     } else {
         vector<Postulante>::iterator it_p = postulantes.begin();
@@ -33,9 +34,6 @@ void backtracking_busqueda(set<string> & tec_cubrir, vector<Postulante> & postul
                     agregado = true; // marco para saber que lo agrege y luego sacarlo
                 }
                 it_t++; // avanzo para asignar otro lenguaje
-                if(it_t == tec_cubrir.end()) {
-                    cout << "es final" << endl;
-                }
                 backtracking_busqueda(tec_cubrir, postulantes, it_t, s_actual, mejor_s);
                 it_t--; //vuelvo para asignar el mismo el lenguaje a otra persona
                 if(agregado) {

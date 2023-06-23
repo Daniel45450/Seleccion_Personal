@@ -6,6 +6,17 @@
 void vector_p_to_list_p(const vector<Postulante> & postulantes, list<Postulante> & postulantes_l); // vector<Postulante> a list<Postulante>
 void vector_p_to_list_s(const vector<Postulante> & postulantes, list<string> & postulantes_l); // vector<Postulante> a list<string>
 void vector_p_to_vector_s(const vector<Postulante> & postulantes, vector<string> & v_s); // vector<Postulante> a vector<string>
+void copiar_lista(const vector<string> & origen, vector<string> & destino);
+
+void copiar_lista(const vector<string> & origen, vector<string> & destino)
+{
+    destino.clear();
+    vector<string>::const_iterator it = origen.begin();
+    while(it != origen.end()) {
+        destino.push_back(*it);
+        it++;
+    }
+}
 
 void vector_p_to_list_p(const vector<Postulante> & postulantes, list<Postulante> & postulantes_l)
 {
