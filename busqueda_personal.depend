@@ -1,11 +1,12 @@
 # depslib dependency file v1.0
-1687415460 source:e:\programas\busqueda_personal\main.cpp
+1687473557 source:e:\programas\busqueda_personal\main.cpp
 	<iostream>
 	<list>
 	"Funciones_archivo.h"
 	"Operadores.h"
 	"Postulante.h"
 	"Seleccionador.h"
+	"Utilidades.h"
 	<bits/stdc++.h>
 
 1687410608 source:e:\programas\busqueda_personal\src\postulante.cpp
@@ -24,5 +25,9 @@
 
 1687326364 e:\programas\busqueda_personal\operadores.h
 
-1687416547 e:\programas\busqueda_personal\seleccionador.h
+1687472120 e:\programas\busqueda_personal\seleccionador.h
+	"Utilidades.h"
+
+1687472911 e:\programas\busqueda_personal\utilidades.h
+	"Postulante.h"
 

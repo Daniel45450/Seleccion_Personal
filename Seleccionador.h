@@ -1,6 +1,8 @@
 #ifndef SELECCIONADOR_H_INCLUDED
 #define SELECCIONADOR_H_INCLUDED
 
+#include "Utilidades.h"
+
 void seleccion_aproximada(const vector<Postulante> & postulantes, const set<string> & tec_cubrir, list<string> & seleccion);
 void backtracking_busqueda(set<string> & tec_cubrir, vector<Postulante> & postulantes, set<string>::iterator & it_t, vector<string> & s_actual, vector<string> & mejor_s);
 bool asignado(const vector<string> & postulantes, const string & buscar);
@@ -20,7 +22,6 @@ void backtracking_busqueda(set<string> & tec_cubrir, vector<Postulante> & postul
     if(it_t == tec_cubrir.end()) {
         if(s_actual.size() < mejor_s.size()) {
             mejor_s = s_actual;
-            return;
         }
     } else {
         vector<Postulante>::iterator it_p = postulantes.begin();
@@ -32,6 +33,9 @@ void backtracking_busqueda(set<string> & tec_cubrir, vector<Postulante> & postul
                     agregado = true; // marco para saber que lo agrege y luego sacarlo
                 }
                 it_t++; // avanzo para asignar otro lenguaje
+                if(it_t == tec_cubrir.end()) {
+                    cout << "es final" << endl;
+                }
                 backtracking_busqueda(tec_cubrir, postulantes, it_t, s_actual, mejor_s);
                 it_t--; //vuelvo para asignar el mismo el lenguaje a otra persona
                 if(agregado) {
